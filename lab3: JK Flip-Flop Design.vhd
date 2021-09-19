@@ -6,12 +6,12 @@ end FF_JK;
 architecture action of FF_JK is 
 signal TMP, Qe, QNe : bit;
 begin
-Q<=Qe;
-Qn<=QNe;
+Q <= Qe;
+Qn <= QNe;
 process (clk)
 begin
 	if clk'event and clk = '1' then
-		TMP<= (J and not Qe) or (not K and Qe);
+		TMP <= (J and not Qe) or (not K and Qe);
 	elsif clk'event and clk ='0' then
 		Qe <= TMP;
 		QNe <= not TMP;
