@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
+-- Segment Display Decoder for Hexidecimal Units --
 entity seven_sd is 
 port (S : in std_logic_vector (3 downto 0);
 		HEX : out std_logic_vector (6 downto 0));
