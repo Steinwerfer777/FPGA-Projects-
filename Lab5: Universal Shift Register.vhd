@@ -1,8 +1,9 @@
 library ieee;
 use ieee.numeric_bit.all;
 
+-- Constructing 10-bit USR -- 
 entity USR_10 is
-port(S1, S0, S_L, S_R, clk, clrb : in bit;
+port(S1, S0, S_L, S_R, clk, clrb : in bit; -- S_L = Shift Left, S_R = Shift Right --
 	load : in bit_vector(9 downto 0);
 	O : out bit_vector(9 downto 0));
 end USR_10;
