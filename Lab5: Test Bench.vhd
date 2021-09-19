@@ -19,16 +19,16 @@ begin
 t1: Lab5 port map (clki, rstbi, keyi, LEDRi);
 
 clki <= not clki after 1 ns,
-		  clki after 3 ns;
+	clki after 3 ns;
 rstbi <= '0' after 0 ns,
-			'1' after 0.7 ns;
+	 '1' after 0.7 ns;
 keyi(1) <= '1' after 0 ns,
-				'0' after 0.5 ns;
+	   '0' after 0.5 ns;
 keyi(3) <= '1' after 0 ns,
-				'0' after 4 ns;
+	   '0' after 4 ns;
 keyi(2) <= '0' after 0 ns,
-				'1' after 4.2 ns;
+	   '1' after 4.2 ns;
 keyi(0) <= '1' after 0 ns,
-				'0' after 5 ns;
+	   '0' after 5 ns;
 
 end tb; 
