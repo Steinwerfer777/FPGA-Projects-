@@ -20,7 +20,7 @@ Ei <= '0' after 0 ns,
 		'1' after 50 ns,
 		'0' after 100 ns,
 		'1' after 120 ns,
-		'0' after 200ns;
+		'0' after 200 ns;
 xi <= '1' after 0 ns,
 		'0' after 75 ns,
 		'1' after 150 ns;
