@@ -1,6 +1,7 @@
 library ieee;
 use ieee.numeric_bit.all;
 
+-- It is expected that Static Errors will occur in RTL -- 
 entity tb_error is
 end tb_error;
 
