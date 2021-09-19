@@ -10,4 +10,5 @@ Objectives:
 4: Using '0' logic to display components for a Hexidecimal display
 5: Using a Universal Shift Register & the microprocessor's LEDs to perform a "Night Rider" style light variant
 6: Constructing a 24-hr digital clock which used several of the previously designed components including SSDs, Hexidecimal Decoders, & counters 
-7: Testing logic maps for static hazard and then correcting those errors. These used two seperate NAND gates to implement, the correcting variant involved a 10 ns delay
+7: Testing logic maps for static hazard and then correcting those errors. These used two seperate NAND gates to implement, the correcting variant involved a 10 ns delay.
+Special attention was brought to RTL testing as the logic maps for the correction code had to be adjusted or tinkered for proper function.  
