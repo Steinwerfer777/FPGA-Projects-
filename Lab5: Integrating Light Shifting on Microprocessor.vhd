@@ -8,12 +8,14 @@ port(clk_50, rstb : in bit;
 end Lab5;
 
 architecture action of Lab5 is
+--Implement 3 bit Counter -- 
 component CNT_3 is
 	port(clk, clrb, ld : in bit;
 		load : in unsigned (2 downto 0);
 		O : out bit_vector(2 downto 0));
 end component; 
 
+-- Implement Universal Shift Register -- 
 component USR_10 is
 port(S1, S0, S_L, S_R, clk, clrb : in bit;
 	load : in bit_vector(9 downto 0);
@@ -36,7 +38,7 @@ S_R <= LEDR_vals(0);
 clk_V <= CNT_vals(2) and CNT_vals(0);
 LEDR <= LEDR_vals;
 
---State Machine Going Forward. Grease Up Anus -- 
+--State Machine Going Forward -- 
 process(clk_50, rstb)
 begin
 if (rstb = '0') then
